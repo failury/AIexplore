@@ -1,0 +1,72 @@
+Folder PATH listing for volume EXTERNAL (HDD)
+Volume serial number is E8FF-21A6
+G:.
+|   .gitignore
+|   main.ipynb
+|   Mini Project-1.pdf
+|   output.doc
+|   README.md
+|   
++---.vscode
+|       settings.json
+|       
++---DAG_ERC_CODE
+|   |   dataloader.py
+|   |   dataset.py
+|   |   evaluate.py
+|   |   LICENSE
+|   |   model.py
+|   |   model_utils.py
+|   |   ORIGINAL.md
+|   |   run.py
+|   |   trainer.py
+|   |   utils.py
+|   |   
+|   +---saved_models
+|   |   +---DailyDialog
+|   |   +---EmoryNLP
+|   |   +---IEMOCAP
+|   |   |       logging.log
+|   |   |       
+|   |   \---MELD
+|   \---__pycache__
+|           dataloader.cpython-39.pyc
+|           dataset.cpython-39.pyc
+|           model.cpython-39.pyc
+|           model_utils.cpython-39.pyc
+|           trainer.cpython-39.pyc
+|           utils.cpython-39.pyc
+|           
++---data
+|   +---DailyDialog
+|   |       dev_data_roberta.json.feature
+|   |       label_vocab.pkl
+|   |       speaker_vocab.pkl
+|   |       test_data_roberta.json.feature
+|   |       train_data_roberta.json.feature
+|   |       
+|   +---EmoryNLP
+|   |       dev_data_roberta.json.feature
+|   |       label_vocab.pkl
+|   |       speaker_vocab.pkl
+|   |       test_data_roberta.json.feature
+|   |       train_data_roberta.json.feature
+|   |       
+|   +---IEMOCAP
+|   |       dev_data_roberta.json.feature
+|   |       label_vocab.pkl
+|   |       speaker_vocab.pkl
+|   |       test_data_roberta.json.feature
+|   |       train_data_roberta.json.feature
+|   |       
+|   \---MELD
+|           dev_data_roberta.json.feature
+|           label_vocab.pkl
+|           speaker_vocab.pkl
+|           test_data_roberta.json.feature
+|           train_data_roberta.json.feature
+|           
+\---__pycache__
+        dataloader.cpython-39.pyc
+        dataset.cpython-39.pyc
+        

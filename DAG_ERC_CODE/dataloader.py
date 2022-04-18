@@ -55,6 +55,7 @@ def get_IEMOCAP_loaders(dataset_name = 'IEMOCAP', batch_size=32, num_workers=0, 
                               pin_memory=pin_memory)
 
     testset = IEMOCAPDataset(dataset_name, 'test',  speaker_vocab, label_vocab, args)
+
     test_loader = DataLoader(testset,
                              batch_size=batch_size,
                              collate_fn=testset.collate_fn,
