@@ -14,6 +14,10 @@ The researchers are trying to find a better way to model emotion recognition fro
 
 # Method
 
+The researcher of the paper built a directed acyclic graph to model the information propagation in a conversation. Each node is a utterance and the edge is the information propagate between each utterances; the relation of each edge can be 0 or 1 where 1 for that the two connected utterances are spoken by the same speaker, and 0 for otherwise. The model is primarily inspired by DAGNN with novel im- provements specially made for emotion recognition in conversation. At each layer l of DAG-ERC, due to the temporal information flow, the hidden state of utterances should be computed recurrently from the first utterance to the last one.
+
+
+
 # Data
 
 ##### Dataset descriptions
@@ -130,6 +134,18 @@ Initially, I run the code with provided command in the author's readme file: `py
 # Results
 
 After running command `python run.py --dataset IEMOCAP --gnn_layers 4 --lr 0.0005 --batch_size 16 --epochs 30 --dropout 0.2`. The program ran for 8 minutes and 30.7 seconds on RTX 2080. Each epoch took about 15 ~ 30 seconds. The program outputs model's best f-score based on validation is 66.26.
+
+
+
+Paper’s result:
+
+![Screen Shot 2022-04-27 at 1.42.38 AM](Screen Shot 2022-04-27 at 1.42.38 AM.png)
+
+
+
+Results vs different DAGs:![Screen Shot 2022-04-27 at 1.44.35 AM](Screen Shot 2022-04-27 at 1.44.35 AM.png)
+
+
 
 # Problems/Issues
 
